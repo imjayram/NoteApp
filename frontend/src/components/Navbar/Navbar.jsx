@@ -30,7 +30,7 @@ const Navbar = ({userInfo,handleClearSearch,onSearchNote}) => {
     try {
       dispatch(signoutStart())
 
-      const res = await axios.get("http://localhost:3000/api/auth/logout",{withCredentials:true})
+      const res = await axios.get("https://note-app-1ias.vercel.app/api/auth/logout",{withCredentials:true})
 
       if(res.data.success === false){
         dispatch(signoutFailure(res.data.message))
