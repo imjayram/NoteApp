@@ -49,7 +49,7 @@ const Home = () => {
   
   const getAllNotes = async()=>{
     try {
-      const res = await axios.get("https://note-app-1ias.vercel.app/api/note/all",{withCredentials:true,})
+      const res = await axios.get("https://note-app-1ias.vercel.app/api/note/all",{withCredentials:true})
 
       if(res.data.success === false){
         console.log(res.data);
