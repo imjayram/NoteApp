@@ -16,7 +16,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({origin:["https://note-app-2yb1.vercel.app"],methods:["POST","GET"],credentials:true}));
+app.use(cors({origin:["https://note-app-2yb1.vercel.app"],methods:["POST","GET","DELETE","PUT"],credentials:true}));
 
 const port = process.env.PORT || 3000
 
