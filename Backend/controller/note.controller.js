@@ -1,5 +1,5 @@
 import Note from "../models/note.model.js";
-import { errorHandler } from "./utils/error.js";
+import { errorHandler } from "../utils/error.js";
 
 export const addNote = async (req,res,next) =>{
     const {title,content,tags} = req.body;
