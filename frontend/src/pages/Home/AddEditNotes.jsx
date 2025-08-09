@@ -15,7 +15,7 @@ const AddEditNotes = ({onClose,noteData,type,getAllNotes}) => {
 
     const addNewNote = async () => {
         try {
-              const res = await axios.post("https://note-app-1ias.vercel.app/api/note/add",{title,content,tags},{withCredentials:true})
+              const res = await axios.post("https://note-app-drab-five.vercel.app/api/note/add",{title,content,tags},{withCredentials:true})
 
             if(res.data.success === false){
                 console.log(res.data.message);
@@ -39,7 +39,7 @@ const AddEditNotes = ({onClose,noteData,type,getAllNotes}) => {
 
         const noteId = noteData._id
         try {
-            const res = await axios.post("https://note-app-1ias.vercel.app/api/note/edit/"+noteId,{title,content,tags},{withCredentials:true})
+            const res = await axios.post("https://note-app-drab-five.vercel.app/api/note/edit/"+noteId,{title,content,tags},{withCredentials:true})
             
             if(res.data.success === false){
                 console.log(res.data.message);
