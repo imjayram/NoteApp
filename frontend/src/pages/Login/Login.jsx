@@ -40,7 +40,7 @@ const Login = () => {
       dispatch(signInStart())
 
       const res = await axios.post(
-        "https://note-app-1ias.vercel.app/api/auth/login",
+        "https://note-app-drab-five.vercel.app/api/auth/login",
         { email, password },
         { withCredentials: true }
       )
